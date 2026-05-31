@@ -1,4 +1,4 @@
-service: insecure-test
+service: insecure-test-1780222982
 
 provider:
   name: aws
