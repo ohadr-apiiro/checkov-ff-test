@@ -1,3 +1,4 @@
+# rev 1780313110
 service: insecure-svc
 
 provider:
@@ -7,12 +8,7 @@ provider:
   environment:
     DB_PASSWORD: "hardcoded-secret-123"
     AWS_ACCESS_KEY_ID: "AKIAIOSFODNN7EXAMPLE"
-  iam:
-    role:
-      statements:
-        - Effect: Allow
-          Action: "*"
-          Resource: "*"
+    AWS_SECRET_ACCESS_KEY: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 functions:
   vulnerable:
