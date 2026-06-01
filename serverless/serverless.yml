@@ -1,9 +1,12 @@
-service: insecure-test-1780222982
+service: insecure-svc
 
 provider:
   name: aws
-  runtime: python3.9
+  runtime: python3.8
   region: us-east-1
+  environment:
+    DB_PASSWORD: "hardcoded-secret-123"
+    AWS_ACCESS_KEY_ID: "AKIAIOSFODNN7EXAMPLE"
   iam:
     role:
       statements:
@@ -12,9 +15,9 @@ provider:
           Resource: "*"
 
 functions:
-  hello:
-    handler: handler.hello
+  vulnerable:
+    handler: handler.run
     events:
       - http:
-          path: hello
-          method: get
+          path: run
+          method: post
