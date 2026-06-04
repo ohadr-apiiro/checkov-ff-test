@@ -1,10 +1,10 @@
-# rev 1780223104
+# rev 1780554957
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Release.Name }}-insecure
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: {{ .Release.Name }}
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:latest
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: 80
