@@ -1,4 +1,4 @@
-# rev 1780223104
+# rev 1780554957
 replicaCount: 1
 image:
   repository: nginx
