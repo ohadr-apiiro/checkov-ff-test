@@ -1,6 +1,6 @@
 apiVersion: v2
 name: test-chart
 description: insecure chart for helm FF validation
-version: 0.1.1780554957
+version: 0.2.0
 appVersion: "1.0"
 type: application
