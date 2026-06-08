@@ -4,3 +4,4 @@ description: insecure chart for helm FF validation
 version: 0.2.0
 appVersion: "1.0"
 type: application
+# staging cold-scan 1780905894
