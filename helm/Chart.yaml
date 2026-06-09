@@ -1,7 +1,7 @@
 apiVersion: v2
 name: test-chart
 description: insecure chart for helm FF validation
-version: 0.2.0
+version: 0.2.1
 appVersion: "1.0"
 type: application
-# staging cold-scan 1780905894
+# staging cold-scan 1780983187

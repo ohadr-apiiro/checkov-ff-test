@@ -2,4 +2,4 @@ replicaCount: 1
 image:
   repository: nginx
   tag: "latest"
-# staging cold-scan 1780905894
+# staging cold-scan 1780983187

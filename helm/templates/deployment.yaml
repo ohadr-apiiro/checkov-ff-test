@@ -17,4 +17,4 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 80
-# staging cold-scan 1780905894
+# staging cold-scan 1780983187
