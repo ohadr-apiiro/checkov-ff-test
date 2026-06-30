@@ -17,4 +17,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 80
-# staging cold-scan 1780983187
+          livenessProbe:
+            httpGet: { path: /, port: 80 }
+          readinessProbe:
+            httpGet: { path: /, port: 80 }
